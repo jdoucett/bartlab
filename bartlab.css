@@ -1,0 +1,110 @@
+*{
+	font-family: 'Nunito', sans-serif;
+}
+.jumbotron {
+	  background-color: #fff;
+	  margin-bottom: 0;
+	  padding: 10px 0;
+}
+
+#logo {
+	max-width: 45%;
+}
+
+/* Word cloud styles
+-------------------------------------------------- */
+#wordcloud {
+	position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+.wordcloudcontainer {
+	position: relative;
+	height: 200px;
+	width: 50%;
+}
+/* Twitter  styles
+-------------------------------------------------- */
+#twitter {
+	padding-top: 20px;
+	font-family: 'Nunito', sans-serif;
+}
+
+#twitter-widget-0 {
+	height: 400px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #ebe9e9;
+}
+
+#footer .row {
+	  background-color: #ebe9e9;
+	  margin: 20px 0 0 0;
+}
+
+#footer ul {
+	list-style-type: none;
+}
+
+// Mixin
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+	display: none;
+}
+
+.bottomaligned {position:absolute; bottom:0;  margin-bottom:7px; left: 0;}
+
+.squares p {
+	padding: 0 30px;
+}
+
+.squares img {
+	height: 110px;
+	width: 110px;
+}
+
+.squares h2 {
+	height: 33px;
+	margin-top: 5px;
+}
+
+/*Targets all calsses that start with col-md*/
+*[class^='col-md']{
+	padding-bottom: 25px;
+}
+
+.center-block {
+  display: table;
+  margin: 0 auto;
+}
+
+#footer .center-block {
+	min-width: 120px;
+	padding:0;
+}
+

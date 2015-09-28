@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#footer").load("./footer.html #footercontent"); 
+      });
+      console.log ("ran footer");
+    </script> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+    <title>Bart Lab for Inorganic Chemistry, Purdue University</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for Bart lab website -->
+    <link href="bartlab.css" rel="stylesheet">
+
+    <!-- Word Cloud JavaScript -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/d3-cloud-master/d3.layout.cloud.js"></script>    
+
+  </head>
+
+  <body>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container" id="logo">
+        <img src="img/blh.svg" class="center-block"/>
+      </div>
+    </div>
+    <!-- Word Cloud -->
+    <div class="container wordcloudcontainer">
+      <!--Wordcloud is create by script at bottom of page-->
+      <div id="wordcloud" class="center-block"></div>
+    </div>
+    
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="squares col-md-4">
+          <img src="img/publications.svg" alt="bart lab publications" class="center-block"/>
+          <h2 id="numpublications" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  -->
+          <p class="text-center">Nature Chemistry, Journal of the American Chemistry Society, Inorganic Chemistry, Organometallics, Chemical Communicaitons </p>
+          <div class="buttons">
+            <p class="text-center"><a class="btn btn-default" href="#" role="button">Publications &raquo;</a></p>
+          </div>
+       </div>
+       <div class="squares col-md-4">
+          <img src="img/techniques.svg" alt="bart lab analysis techniques" class="center-block"/>
+          <h2 id="numtechniques" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  --><!--Number values and settings at bottom in "Number count settings" area  -->
+          <p class="text-center"> NMR, X-ray Crystallography, Squid, EPR, Electrochemistry, X-ray Absorption Specroscopy, Infrared Spectroscopy, Electronic Absorption Spectroscopy</p>
+          <div class="buttons">
+            <p class="text-center"><a class="btn btn-default" href="#" role="button">Analytic Techniques &raquo;</a></p>
+          </div>
+        </div>
+        <div class="squares col-md-4">
+          <img src="img/labmembers.svg" alt="bart lab members" class="center-block"/>
+          <h2 id="numlabmembers" class="text-center">9</h2><!--Number values and settings at bottom in "Number count settings" area  -->
+          <p class="text-center">John, Nick, Sarah, Chris, Caleb, Austin, Finley, Otto</p>
+          <div class="buttons">
+            <p class="text-center buttons"><a class="btn btn-default" href="#" role="button">Lab Members &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="squares col-md-4">
+          <img src="img/projects.svg" alt="bart lab analysis techniques" class="center-block"/>
+          <h2 id="numprojects" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  -->
+          <p class="text-center">Awesome uranium action, More uranium fun, Transition metal backbonding spectacular, Making pretty colored solutions</p>
+          <div class="buttons">
+            <p class="text-center"><a class="btn btn-default" href="#" role="button">Projects &raquo;</a></p>
+          </div>
+        </div>
+        <div class="squares col-md-4">
+          <img src="img/institutions.svg" alt="bart support institutions" class="center-block"/>
+          <h2 id="numinstitutions" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  -->
+          <p class="text-center">National Science Foundation, Department of Energy, Cottrell Scholars, Purdue University </p>
+          <div class="buttons">
+            <p class="text-center"><a class="btn btn-default" href="#" role="button">Supporting Institutions &raquo;</a></p>
+          </div>
+        </div>
+        <div class="squares col-md-4">
+          <img src="img/graduates.svg" alt="bart lab graduates" class="center-block"/>
+          <h2 id="numgraduates" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  -->
+          <p class="text-center">Steve, Ellen, And, Some, Other, People, That, Icant, Thinkof, Right, Now</p>
+          <div class="buttons">
+            <p class="text-center"><a class="btn btn-default" href="#" role="button">Alumni &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="pubtwitter" class="row">
+        <div class="col-md-8">
+          <h2>Selected Publications</h2>
+          <p>blalakdsjf aslsdkjsadljsalk nsadflnkasdfkjdsak 2015</p>
+          <p> sadjkl ewn aodp;ij dsam.m,dslk 2014</p>
+          <p>ajklkds md, dfsaoijafs sadmsfkl efne, 2011</p>
+        </div>
+        <div class="col-md-4" id="twitter" >
+          <a class="twitter-timeline" href="https://twitter.com/TheBartLab" data-widget-id="642152863691620352">Tweets by @TheBartLab</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /container -->
+  <footer id="footer">
+    <!--footer content is included from footer.html with a js call at the top of the page-->
+  </footer>
+  </body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Number count settings -->
+    <script src="js/countUp.js-master/countUp.min.js"></script>
+    <script>
+      var countPublications = new CountUp("numpublications", 0, 31, 0, 2.5);
+      countPublications.start();
+      var countTechniques = new CountUp("numtechniques", 0, 8, 0, 2.5);
+      countTechniques.start();
+      var countLabMembers = new CountUp("numlabmembers", 0, 9, 0, 2.5);
+      countLabMembers.start();
+      var countProjects = new CountUp("numprojects", 0, 4, 0, 2.5);
+      countProjects.start();
+      var countInstitutions = new CountUp("numinstitutions", 0, 5, 0, 2.5);
+      countInstitutions.start();
+      var countGraduates = new CountUp("numgraduates", 0, 9, 0, 2.5);
+      countGraduates.start();
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script>
+  $(document).ready(function() {
+    twitterCheck = setInterval(function() {
+        var twitterFrame = $("#twitter-widget-0");
+        var twitterTimeline = twitterFrame.contents().find(".timeline");
+        if(twitterFrame.length && twitterTimeline.length) {
+            twitterTimeline.attr("style","max-width:100% !important;");
+            twitterFrame.attr("style","max-width:100% !important; width: 100% !important;");
+            clearInterval(twitterCheck);
+        }
+    }, 10);
+});
+  </script>
+<!--Wordcloud script-->  
+<script>
+// Larger text sizes are darker in color.  Any values outside the range specififed under "var color = d3.scale.liner()" will be clipped to the range value due to the .clamp(true) setting.  Make the maximum domaon value the same size as your biggest text value. 
+var frequency_list = [{"text":"uranium", "size":"30"}, {"text":"actinides","size":"30"},{ "text":"organometallics","size":"26"},{ "text":"redox-active","size":"26"},{ "text":"uranyl","size":"23"},{ "text":"radioactive","size":"23"},{ "text":"coordination","size":"20"},{ "text":"elements","size":"20"},{ "text":"rare earth","size":"17"},{ "text":"minerals","size":"17"},{ "text":"ligands","size":"17"},{ "text":"f block","size":"14"}];
+
+var color = d3.scale.linear()
+        .clamp(true)
+        .domain([0,30])
+        .range([ "#004cdc","#fff"]);
+
+(function() {
+var fill = d3.scale.category20();
+var layout = d3.layout.cloud()
+    .size([650, 200])
+    .words(frequency_list.map(function(d) {
+      return {text: d.text, size: d.size};
+    }))
+    .padding(5)
+    .rotate(function() { return ~~(Math.random() * 1) * 90; })
+    .font("Impact")
+    .fontSize(function(d) { return d.size; })
+    .on("end", draw);
+layout.start();
+function draw(words) {
+  d3.select("#wordcloud").append("svg")
+      .attr("width", layout.size()[0])
+      .attr("height", layout.size()[1])
+    .append("g")
+      .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+    .selectAll("text")
+      .data(words)
+    .enter().append("text")
+      .style("font-size", function(d) { return d.size + "px"; })
+      .style("font-family", "'Nunito', sans-serif;")
+      .attr("text-anchor", "middle")
+            .style("fill", "white")
+            .transition()
+      .duration(3000)
+            .attr("transform", function(d) {
+        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+      })
+      .style("fill", function(d, i) { return color(i); })
+      .text(function(d) { return d.text; });
+
+}
+})();</script>
+
+
+</html>
