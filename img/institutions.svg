@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_256x256</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon_256x256" sketch:type="MSArtboardGroup">
+            <circle id="Blue-Circle" stroke="#004CDC" stroke-width="6" sketch:type="MSShapeGroup" cx="128.5" cy="128.5" r="99.5"></circle>
+            <g id="Institutions" sketch:type="MSLayerGroup" transform="translate(64.000000, 57.000000)" fill="#004CDC">
+                <path d="M121,100 L113,100 L113,52 L121.156,52 C126.553,52 128.22,49.4 128.734,47.85 C129.248,46.302 129.463,43.225 125.108,39.982 L73.808,2.765 C71.415,0.982 68.287,0 65,0 C61.713,0 58.585,0.982 56.233,2.734 L4.851,40.012 C0.536,43.225 0.752,46.302 1.266,47.85 C1.779,49.4 3.447,52 8.844,52 L17,52 L17,100 L9,100 C4.589,100 1,103.589 1,108 L1,120 C1,124.411 4.589,128 9,128 L121,128 C125.411,128 129,124.411 129,120 L129,108 C129,103.589 125.411,100 121,100 L121,100 Z M105,100 L91,100 L91,52 L105,52 L105,100 L105,100 Z M61,52 L61,100 L47,100 L47,52 L61,52 L61,52 Z M69,52 L83,52 L83,100 L69,100 L69,52 L69,52 Z M60.972,9.18 C61.978,8.43 63.446,8 65,8 C66.554,8 68.021,8.43 69.069,9.21 L117.023,44 L12.977,44 L60.972,9.18 L60.972,9.18 Z M25,52 L39,52 L39,100 L25,100 L25,52 L25,52 Z M120.988,120 L9,120 L9,108 L121,108 L120.988,120 L120.988,120 Z M121,124 L121,120 L121.001,120 L121,124 L121,124 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
