@@ -15,17 +15,32 @@
 -------------------------------------------------- */
 #wordcloud {
 	position: absolute;
-    top: 10%;
-    bottom: 10%;
-    left: 10%;
-    right: 10%;
+  height: 200px;
+
 }
 
 .wordcloudcontainer {
 	position: relative;
-	height: 200px;
-	width: 50%;
+	display: block;
+	margin: auto;
+/*	width: 40%;
+*/	height: 300px;
 }
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
 /* Twitter  styles
 -------------------------------------------------- */
 #twitter {

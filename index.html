@@ -2,16 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Need to load jquery to run next function that pulls in navbar, footer, and other pieces common to all pages -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script> 
       $(function(){
-        $("#footer").load("./footer.html #footercontent"); 
+        $("#footer").load("./include.html #footercontent"); 
+        $("#navbar").load("./include.html #navbarcontent");
       });
-      console.log ("ran footer");
     </script> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Font for pages -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for Bart lab website -->
+    <link href="bartlab.css" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -19,11 +28,7 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
     <title>Bart Lab for Inorganic Chemistry, Purdue University</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for Bart lab website -->
-    <link href="bartlab.css" rel="stylesheet">
 
     <!-- Word Cloud JavaScript -->
     <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -32,17 +37,19 @@
   </head>
 
   <body>
-
+    <!-- Static navbar -->
+    <nav id="navbar" class="navbar navbar-default navbar-static-top">
+    </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container" id="logo">
-        <img src="img/blh.svg" class="center-block"/>
+        <img src="img/blh.svg" />
       </div>
     </div>
     <!-- Word Cloud -->
-    <div class="container wordcloudcontainer">
+    <div class="container wordcloudcontainer ">
       <!--Wordcloud is create by script at bottom of page-->
-      <div id="wordcloud" class="center-block"></div>
+      <div id="wordcloud" class="svg-container"></div>
     </div>
     
     <div class="container">
@@ -166,11 +173,17 @@ var color = d3.scale.linear()
         .clamp(true)
         .domain([0,30])
         .range([ "#004cdc","#fff"]);
-
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    console.log();
 (function() {
 var fill = d3.scale.category20();
 var layout = d3.layout.cloud()
-    .size([650, 200])
+    .size([x, 300])
     .words(frequency_list.map(function(d) {
       return {text: d.text, size: d.size};
     }))
@@ -181,11 +194,17 @@ var layout = d3.layout.cloud()
     .on("end", draw);
 layout.start();
 function draw(words) {
-  d3.select("#wordcloud").append("svg")
-      .attr("width", layout.size()[0])
-      .attr("height", layout.size()[1])
+  d3.select("#wordcloud")   
+    .append("div")
+      .classed("svg-container", true) //container class to make it responsive
+    .append("svg")
+    //responsive SVG needs these 2 attributes and no width and height attr
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 " + x + " 300")
+    //class to make it responsive
+    .classed("svg-content-responsive", true)
     .append("g")
-      .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+    .attr("transform", "translate(" + x/2 + " ,150)")
     .selectAll("text")
       .data(words)
     .enter().append("text")
@@ -202,6 +221,8 @@ function draw(words) {
       .text(function(d) { return d.text; });
 
 }
+    console.log("made it")
+
 })();</script>
 
 
