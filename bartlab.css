@@ -123,3 +123,10 @@ body {
 	padding:0;
 }
 
+/*css for publications page*/
+#plubicationlist {
+  padding-bottom: 25px;
+}
+#plubicationlist .col9 {
+  padding-bottom: 10px;
+}
