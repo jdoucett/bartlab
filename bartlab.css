@@ -1,6 +1,24 @@
+/* Site wide style mods */
 *{
 	font-family: 'Nunito', sans-serif;
 }
+
+.container {
+  padding-bottom: 25px;
+}
+
+#navbarcontainer{
+  padding-bottom: 0px;
+}
+
+h4 {
+  padding-top: 25px;
+}
+
+.squares a{
+  text-decoration: none;
+}
+/* Homepage mods */
 .jumbotron {
 	  background-color: #fff;
 	  margin-bottom: 0;
@@ -8,6 +26,7 @@
 }
 
 #logo {
+  width:45%;
 	max-width: 45%;
 }
 
