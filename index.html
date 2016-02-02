@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Need to load jquery to run next function that pulls in navbar, footer, and other pieces common to all pages -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#footer").load("./include.html #footercontent"); 
+        // $("#navbar").load("./include.html #navbarcontent");
+      });
+      $(document).ready(function () {
+        $('ul.nav > li').click(function (e) {
+            // e.preventDefault();
+            $('ul.nav > li').removeClass('active');
+            $(this).addClass('active');                
+        });            
+    });      
+    </script> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Font for pages -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for Bart lab website -->
+    <link href="bartlab.css" rel="stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+    <title>Bart Lab for Inorganic Chemistry, Purdue University</title>
+
+
+
+    <!-- Word Cloud JavaScript -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/d3-cloud-master/d3.layout.cloud.js"></script>    
+
+  </head>
+
+  <body>
+  <!-- Static navbar -->
+  <nav id="navbarcontent" class ="navbar navbar-default">
+    <div id="navbarcontainer" class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="suzanne.html">Suzanne Bart</a></li>
+          <li><a href="group.html">Group</a></li>
+          <li><a href="pubs.html">Pubs</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+</nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container" id="logo">
+        <img src="img/blh.png" />
+      </div>
+    </div>
+    <!-- Word Cloud -->
+    <div class="container wordcloudcontainer ">
+      <!--Wordcloud is create by script at bottom of page-->
+      <div id="wordcloud" class="svg-container"></div>
+    </div>
+    
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="squares col-md-4">
+          <a href="pubs.html">
+            <img src="img/publications.png" alt="bart lab publications" class="center-block"/>
+            <h2 id="numpublications" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  -->
+            <p class="text-center">...publications in journals including Nature Chemistry, Journal of the American Chemical Society, Inorganic Chemistry, Organometallics, and Chemical Communications. </p>
+            <div class="buttons">
+              <p class="text-center"><a class="btn btn-default" href="#" role="button">Publications &raquo;</a></p>
+            </div>
+          </a>
+       </div>
+       <div class="squares col-md-4">
+          <a href="research.html">
+            <img src="img/techniques.png" alt="bart lab analysis techniques" class="center-block"/>
+            <h2 id="numtechniques" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  --><!--Number values and settings at bottom in "Number count settings" area  -->
+            <p class="text-center"> ...techniques we use include NMR, X-ray Crystallography, Squid, EPR, Electrochemistry, X-ray Absorption Spectroscopy, Infrared Spectroscopy, Electronic Absorption Spectroscopy</p>
+            <div class="buttons">
+              <p class="text-center"><a class="btn btn-default" href="#" role="button">Analytic Techniques &raquo;</a></p>
+            </div>
+          </a>
+        </div>
+        <div class="squares col-md-4">
+          <a href="group.html#labmembers"><!--send people into lab member list on gropu page-->
+            <img src="img/labmembers.png" alt="bart lab members" class="center-block"/>
+            <h2 id="numlabmembers" class="text-center">9</h2><!--Number values and settings at bottom in "Number count settings" area  -->
+            <p class="text-center">...lab members are Nick, Chris, John, Sara, Scott, Caleb, Eve, Adharsh, Ezra, Selena, Jaron, Logan, and Nathan</p>
+            <div class="buttons">
+              <p class="text-center buttons"><a class="btn btn-default" href="#" role="button">Lab Members &raquo;</a></p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="squares col-md-4">
+          <a href="research.html">          
+            <img src="img/projects.png" alt="bart lab analysis techniques" class="center-block"/>
+            <h2 id="numprojects" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  -->
+            <p class="text-center">...projects cover a variety of topics including redox-active ligands, low-valent uranium alkyls, reductive elimination, uranium-element multiple bonds, uranium tris(imido) compounds, uranium bis(imido) compounds, and cyclopentadienyl ligands.</p>
+            <div class="buttons">
+              <p class="text-center"><a class="btn btn-default" href="#" role="button">Projects &raquo;</a></p>
+            </div>
+          </a>
+        </div>
+        <div class="squares col-md-4">
+          <a href="research.html">          
+            <img src="img/institutions.png" alt="bart support institutions" class="center-block"/>
+            <h2 id="numinstitutions" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  -->
+            <p class="text-center">...institutions supporting the lab are the National Science Foundation, Department of Energy, Research Corporation, and Purdue University.</p>
+            <div class="buttons">
+              <p class="text-center"><a class="btn btn-default" href="#" role="button">Supporting Institutions &raquo;</a></p>
+            </div>
+          </a>
+        </div>
+        <div class="squares col-md-4">
+          <a href="group.html#alumni"><!--send people into alumni are on group page-->          
+            <img src="img/graduates.png" alt="bart lab graduates" class="center-block"/>
+            <h2 id="numgraduates" class="text-center"></h2><!--Number values and settings at bottom in "Number count settings" area  -->
+            <p class="text-center">...lab alumni are Steven Kraft, Ellen Matson, Jessica Burkett, Dennis Cladis, and Jill Lockhart.</p>
+            <div class="buttons">
+              <p class="text-center"><a class="btn btn-default" href="#" role="button">Alumni &raquo;</a></p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="pubtwitter" class="row">
+        <div class="col-md-8">
+          <h2>Selected Publications</h2>
+          <p>Anderson, N.H.; Odoh, S.; Williams, U.J.; Lewis, A.J.; Wagner, G.L.; Lezama Pacheco, J.; Kozimor, S.A.; Fanwick, P.E.; Gagliardi, L.; Schelter, E.J.; Bart, S.C.* “Investigation of the Electronic Ground States for a Reduced Pyridine(diimine) Uranium Series: Evidence for a Ligand Tetraanion Stabilized by a Uranium Dimer” <em>J. Am. Chem. Soc.</em>, <strong>2015</strong>, 137 (14), 4690–4700.</p>
+          <p>Johnson, S.A.; Kiernicki, J.J.; Fanwick, P.E.; Bart, S.C.* “New Benzylpotassium Reagents and Their Utility for the Synthesis of Homoleptic Uranium(IV) Benzyl Derivatives” <em>Organometallics</em> <strong>2015</strong>,  34 (12), 2889–2895.</p>
+          <p>John J. Kiernicki, Dennis P. Cladis, Phillip E. Fanwick, Matthias Zeller, and Suzanne C. Bart "Synthesis, Characterization, and Stoichiometric U–O Bond Scission in Uranyl Species Supported by Pyridine(diimine) Ligand Radicals" <em>J. Am. Chem. Soc.</em>, <strong>2015</strong>, 137 (34), 11115–11125.</p>
+          <p>Nickolas H. Anderson, Samuel O. Odoh, Yiyi Yao, Ursula J. Williams, Brian A. Schaefer, John J. Kiernicki, Andrew J. Lewis, Mitchell D. Goshert, Phillip E. Fanwick, Eric J. Schelter, Justin R. Walensky, Laura Gagliardi, Suzanne C. Bart, Harnessing redox activity for the formation of uranium tris(imido) compounds, <em>Nature Chemistry</em> <strong>2014</strong>, 6 , 919-926</p>
+          <p>Ellen M. Matson, Sebastian M. Franke, Nickolas H. Anderson, Timothy D. Cook, Phillip E. Fanwick, and Suzanne C. Bart, Radical Reductive Elimination from Tetrabenzyluranium Mediated by an Iminoquinone Ligand, <em>Organometallics</em> <strong>2014</strong>, 33 (8) , 1964-1971</p>
+          <p>John J. Kiernicki, Brian S. Newell, Ellen M. Matson, Nickolas H. Anderson, Phillip E. Fanwick, Matthew P. Shores, and Suzanne C. Bart, Multielectron CâO Bond Activation Mediated by a Family of Reduced Uranium Complexes, <em>Inorg. Chem.</em> <strong>2014</strong>, 53 (7) , 3730-3741</p>
+        </div>
+        <div class="col-md-4" id="twitter" >
+          <a class="twitter-timeline" href="https://twitter.com/TheBartLab" data-widget-id="642152863691620352">Tweets by @TheBartLab</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /container -->
+  <footer id="footer">
+    <!--footer content is included from footer.html with a js call at the top of the page-->
+  </footer>
+  </body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Number count settings -->
+    <script src="js/countUp.js-master/countUp.min.js"></script>
+    <script>
+      var countPublications = new CountUp("numpublications", 0, 31, 0, 2.5);
+      countPublications.start();
+      var countTechniques = new CountUp("numtechniques", 0, 7, 0, 2.5);
+      countTechniques.start();
+      var countLabMembers = new CountUp("numlabmembers", 0, 13, 0, 2.5);
+      countLabMembers.start();
+      var countProjects = new CountUp("numprojects", 0, 7, 0, 2.5);
+      countProjects.start();
+      var countInstitutions = new CountUp("numinstitutions", 0, 4, 0, 2.5);
+      countInstitutions.start();
+      var countGraduates = new CountUp("numgraduates", 0, 5, 0, 2.5);
+      countGraduates.start();
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script>
+  $(document).ready(function() {
+    twitterCheck = setInterval(function() {
+        var twitterFrame = $("#twitter-widget-0");
+        var twitterTimeline = twitterFrame.contents().find(".timeline");
+        if(twitterFrame.length && twitterTimeline.length) {
+            twitterTimeline.attr("style","max-width:100% !important;");
+            twitterFrame.attr("style","max-width:100% !important; width: 100% !important;");
+            clearInterval(twitterCheck);
+        }
+    }, 10);
+});
+  </script>
+<!--Wordcloud script-->  
+<script>
+// Larger text sizes are darker in color.  Any values outside the range specififed under "var color = d3.scale.liner()" will be clipped to the range value due to the .clamp(true) setting.  Make the maximum domaon value the same size as your biggest text value. 
+var frequency_list = [{"text":"uranium", "size":"30"}, {"text":"actinides","size":"30"},{ "text":"organometallics","size":"26"},{ "text":"redox-active","size":"26"},{ "text":"uranyl","size":"23"},{ "text":"radioactive","size":"23"},{ "text":"coordination","size":"20"},{ "text":"elements","size":"20"},{ "text":"rare earth","size":"17"},{ "text":"minerals","size":"17"},{ "text":"ligands","size":"17"},{ "text":"f block","size":"14"}];
+
+var color = d3.scale.linear()
+        .clamp(true)
+        .domain([0,30])
+        .range([ "#004cdc","#fff"]);
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    console.log();
+(function() {
+var fill = d3.scale.category20();
+var layout = d3.layout.cloud()
+    .size([x, 300])
+    .words(frequency_list.map(function(d) {
+      return {text: d.text, size: d.size};
+    }))
+    .padding(5)
+    .rotate(function() { return ~~(Math.random() * 1) * 90; })
+    .font("Impact")
+    .fontSize(function(d) { return d.size; })
+    .on("end", draw);
+layout.start();
+function draw(words) {
+  d3.select("#wordcloud")   
+    .append("div")
+      .classed("svg-container", true) //container class to make it responsive
+    .append("svg")
+    //responsive SVG needs these 2 attributes and no width and height attr
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 " + x + " 300")
+    //class to make it responsive
+    .classed("svg-content-responsive", true)
+    .append("g")
+    .attr("transform", "translate(" + x/2 + " ,150)")
+    .selectAll("text")
+      .data(words)
+    .enter().append("text")
+      .style("font-size", function(d) { return d.size + "px"; })
+      .style("font-family", "'Nunito', sans-serif;")
+      .attr("text-anchor", "middle")
+            .style("fill", "white")
+            .transition()
+      .duration(3000)
+            .attr("transform", function(d) {
+        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+      })
+      .style("fill", function(d, i) { return color(i); })
+      .text(function(d) { return d.text; });
+
+}
+    console.log("made it")
+
+})();</script>
+
+
+</html>

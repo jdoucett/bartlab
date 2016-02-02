@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Need to load jquery to run next function that pulls in navbar, footer, and other pieces common to all pages -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#footer").load("./include.html #footercontent"); 
+        // $("#navbar").load("./include.html #navbarcontent");
+      });
+      $(document).ready(function () {
+        $('ul.nav > li').click(function (e) {
+            // e.preventDefault();
+            $('ul.nav > li').removeClass('active');
+            $(this).addClass('active');                
+        });            
+    });
+    </script> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Font for pages -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for Bart lab website -->
+    <link href="bartlab.css" rel="stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+    <title>Bart Lab for Inorganic Chemistry, Purdue University</title>
+
+
+
+    <!-- Word Cloud JavaScript -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/d3-cloud-master/d3.layout.cloud.js"></script>    
+
+  </head>
+
+  <body>
+  <!-- Static navbar -->
+  <nav id="navbarcontent" class ="navbar navbar-default">
+    <div id="navbarcontainer" class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="research.html">Research</a></li>
+          <li><a href="suzanne.html">Suzanne Bart</a></li>
+          <li><a href="group.html">Group</a></li>
+          <li><a href="pubs.html">Pubs</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+</nav>
+  <div class="container">
+    <div class="page-header">
+      <h1>Research</h1>
+    </div>
+    <p>Our research program aims to identify and address significant challenges toward the ubiquitous use of uranium compounds for metal-mediated organic transformations.  Some challenges we have identified and are currently working on include: </p>
+    <ol>
+      <li>Well-defined uranium organometallics are limited, especially those in low oxidation states.</li>
+      <li>Understanding of fundamental organometallic reactions with uranium is less well established than transition metals, preventing broad application.</liv>
+      <li>The scope of catalytic reactions currently demonstrated with uranium is limited compared to transition metal analogues.</li>
+    </ol>
+    <p>We currently make use of a variety of tools to understand and characterize our uranium compounds. These include paramagnetic 1H NMR, infrared, electronic absorption, and X-ray absorption spectroscopies.  We also utilize X-ray crystallography and computational methods to understand the bonding in our compounds and to provide a complete picture of their electronic structures.</p>
+    <h2>Project 1 – Synthesis of Low-Valent Uranium Alkyl Species and Their Reactivity Toward Small Molecules.</h2>
+    <p>Uranium alkyl species have been studied since the early 1970’s, and more recently, well defined species of all oxidation states have been isolated.  Our research program seeks to find the most efficient general routes to synthesize low-valent uranium alkyls.  We plan to study the reactivity of these species towards insertion reactions to determine their viability for catalysis.<</p>
+    <p>Further, these unique alkyl species will be used to access uranium-element multiple bonds in attempts to synthesize low-valent species. Studying this chemistry affords the opportunity to study fundamental organometallic processes with uranium, which will allow the development of a broad range of catalytic applications.
+    </p>
+    <p>The first organometallic uranium complexes generated in the mid-1950’s use the popular cyclopentadienyl ligand, and since that time, this ligand has enjoyed widespread use for supporting uranium complexes in a range of oxidation states with various ligands.
+    </p>
+    <p>Our actinide research focuses around a popular analogue of these ligands, the tris(pyrazolyl)borate (Tp) ligand. Advantages of using this family of ligands include their ease of synthesis, steric and electronic modularity, and effective steric protection of the uranium center.  Previous work with this ligand on uranium is dominated by the synthesis of uranium(IV) derivatives. In our laboratory, we use the hydrotris(pyrazolyl)borate framework and its related ligands to support uranium(III) alkyls.
+    </p>
+    <h2>Project 2 – Use of Redox-Active Ligands for Supporting Uranium Species Capable of Multi-Electron Chemistry.</h2>
+    <p>Recently the field of catalysis has begun a transformation, whereby chemists are learning how to force inexpensive and abundant first row and early transition metals to behave like their later precious metal counterparts. Success in this endeavor can in part be attributed to the use of redox-active ligands, which mediate low-redox potentials of first row transition metals, thus preventing radical (one electron) chemistry and deleterious side reactions. These ligands store metal electrons using the π* orbitals of their conjugated backbone, enabling two (or more) electron processes by keeping the electrons accessible for productive chemistry.  The result is that these abundant first row metals can be used in applications which would typically require precious late transition metals that undergo multi-electron chemistry, such as rhodium, iridium, palladium, or platinum. Like first row transition metals, uranium typically undergoes one electron reactions, as its available oxidation states are +3, +4, +5, and +6, so utilizing these redox-active ligand frameworks on uranium would offer the same opportunity for this material to mediate multi-electron processes, allowing us to uncover the true chemical potential and unique properties of this element for organometallic chemistry.
+    </p>
+    <p>In addition to synthesizing these compounds, we hope to understand the bonding that occurs between the uranium and this class of ligands.  For transition metal species, redox-active ligands form covalent bonds by π backbonding of discrete numbers of electrons. Moving from the d-block to the f-block metals decreases their ability to engage in covalent-type bonding, and hence backbonding is not observed for the Lanthanides.  The actinides are thought to reside in the middle of these two extremes, as 5f’s can more effectively participate in bonding as compared to the smaller 4f electrons in the Lanthanides.  However, recent studies have demonstrated that 5f orbitals are still too small in radial extension to be responsible for true covalency, and it is in fact the 6d orbitals that are involved in bonding through an accidental energy match of metal and ligand orbitals.
+    </p>
+    <p>Thus, with the help of our collaborators, we are combining both synthetic and spectroscopic techniques to make new compounds and understand their bonding and electronic structures to accomplish fundamental organometallic reactions. Establishing the scope and mechanisms of operation of uranium in its available oxidation states and understanding how to induce multi-electron processes provides valuable insight into the fundamental reactivity of uranium. Furthermore, understanding the utility of redox-active ligands for these processes with actinides is central to their widespread.
+    </p>
+  </div>
+  <footer id="footer">
+    <!--footer content is included from include.html with a js call at the top of the page-->
+  </footer>
+  </body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+</html>
