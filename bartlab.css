@@ -1,0 +1,161 @@
+/* Site wide style mods */
+*{
+	font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  padding-bottom: 25px;
+}
+
+#navbarcontainer{
+  padding-bottom: 0px;
+}
+
+h4 {
+  padding-top: 25px;
+}
+
+.squares a{
+  text-decoration: none;
+}
+/* Homepage mods */
+.jumbotron {
+	  background-color: #fff;
+	  margin-bottom: 0;
+	  padding: 10px 0;
+}
+
+#logo {
+  width:45%;
+	max-width: 45%;
+}
+/*Home page styles
+__________________________________________________*/
+
+#homerow1 h2{
+  color:#9F14CF;
+}
+
+#homerow2 h2{
+  color:#004CDC;
+}
+
+/* Word cloud styles
+-------------------------------------------------- */
+#wordcloud {
+	position: absolute;
+  height: 200px;
+
+}
+
+.wordcloudcontainer {
+	position: relative;
+	display: block;
+	margin: auto;
+/*	width: 40%;
+*/	height: 300px;
+}
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+/* Twitter  styles
+-------------------------------------------------- */
+#twitter {
+	padding-top: 20px;
+	font-family: 'Nunito', sans-serif;
+}
+
+#twitter-widget-0 {
+	height: 400px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #ebe9e9;
+}
+
+#footer .row {
+	  background-color: #ebe9e9;
+	  margin: 20px 0 0 0;
+}
+
+#footer ul {
+	list-style-type: none;
+}
+
+// Mixin
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+	display: none;
+}
+
+.bottomaligned {position:absolute; bottom:0;  margin-bottom:7px; left: 0;}
+
+.squares p {
+	padding: 0 30px;
+}
+
+.squares img {
+	height: 110px;
+	width: 110px;
+}
+
+.squares h2 {
+	height: 33px;
+	margin-top: 5px;
+}
+
+/*Targets all calsses that start with col-md*/
+*[class^='col-md']{
+	padding-bottom: 25px;
+}
+
+.center-block {
+  display: table;
+  margin: 0 auto;
+}
+
+#footer .center-block {
+	min-width: 120px;
+	padding:0;
+}
+
+/*css for publications page*/
+#plubicationlist {
+  padding-bottom: 25px;
+}
+#plubicationlist .col9 {
+  padding-bottom: 10px;
+}

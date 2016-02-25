@@ -1,0 +1,570 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"publi",
+				"plubicationlist"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"view",
+				"viewBoxSize"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"word",
+				"wordcloud"
+			],
+			[
+				"mag",
+				"max-height"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"file",
+				"filein"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 14756,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "suzanne.html",
+			"settings":
+			{
+				"buffer_size": 4400,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "publicationlist.html",
+			"settings":
+			{
+				"buffer_size": 16409,
+				"line_ending": "Unix",
+				"name": "<div id=\"publistcontent\">"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/Volumes/ag_fnr/Users/jdoucett/scripts/PrinterCommand.command",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pubs.html",
+			"settings":
+			{
+				"buffer_size": 3626,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bartlab.css",
+			"settings":
+			{
+				"buffer_size": 2344,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jdoucett/Documents/sites/bartlab/research.html",
+		"/Users/jdoucett/Documents/sites/bartlab/include.html",
+		"/Users/jdoucett/Documents/sites/bartlab/footer.html",
+		"/Users/jdoucett/Documents/sites/bartlab/starterpage.html",
+		"/Users/jdoucett/Documents/sites/bartlab/research_old.html",
+		"/Users/jdoucett/Documents/sites/bartlab/bartlab.css",
+		"/Users/jdoucett/Documents/sites/bartlab/index.html",
+		"/Users/jdoucett/Documents/sites/bartlab/headinclude.txt",
+		"/Users/jdoucett/Documents/sites/bartlab/NickSmith.html",
+		"/Users/jdoucett/Documents/sites/bartlab/js/ie10-viewport-bug-workaround.js",
+		"/Users/jdoucett/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Volumes/jdoucett/lidararchive.txt",
+		"/Volumes/bpijanow/data/toarchive/LTM_USGS/National_Data_version_1.out",
+		"/Volumes/jdoucett/copyjob.pbs"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"index.html",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"home",
+			"index",
+			"numtec",
+			"png",
+			"<div class=\"row\">",
+			" class=\"row\"",
+			"    <!---->\n class=\"row\"",
+			"Cover",
+			"Cov",
+			"</row>",
+			"<row>",
+			"journal of",
+			"European Journal of <i>Inorganic Chemistry</i>",
+			"Chemistry - A European Journal",
+			"Chemical Science",
+			"Nature Chemistry",
+			"Dalton Transactions",
+			"Journal of the American Chemical Society",
+			"Organometallics",
+			"Angewandte Chemie International Edition",
+			"Inorganic Chemistry",
+			"Chemical Communications",
+			"Journal of the American Chemical Society,",
+			",\n,\n        </row>",
+			",\n        </row>",
+			",",
+			"<",
+			"</td>",
+			"<h5 align=\"left\">",
+			"</em>",
+			"<em>",
+			"&nbsp;</td>",
+			"<td valign=\"top\">",
+			"</tr>",
+			"<tr>",
+			"</h5>",
+			"<h5>",
+			"img",
+			"col",
+			"htm",
+			"inclu",
+			"count",
+			".php",
+			"include",
+			"'",
+			"descrip",
+			"test_inp",
+			"$des",
+			"regex",
+			"foot",
+			"words",
+			"draw",
+			"append",
+			"width",
+			"wid",
+			"word",
+			"256",
+			"x",
+			"includ",
+			"40",
+			"text-muted",
+			"css",
+			"col-md-4 squares",
+			"fad",
+			"svg",
+			"360",
+			"word",
+			"includ",
+			"40",
+			"pad",
+			"pub",
+			"hei",
+			"40",
+			"\"40\"",
+			",",
+			",\"",
+			", \"",
+			"start",
+			"fill",
+			"header",
+			"head",
+			"hr",
+			"js",
+			"//",
+			"/",
+			"//",
+			"widt",
+			"wid",
+			"ifram",
+			"Lab",
+			"ifram",
+			"\"text\":",
+			"spiral",
+			"arch",
+			"block",
+			"window",
+			"media",
+			"cloud",
+			"js",
+			"backgr",
+			"../..",
+			"archi",
+			"multithr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<div class=\"col9\">",
+			"",
+			"</div>",
+			"<div class=\"row\">",
+			"<i>European Journal of Inorganic Chemistry</i>",
+			"<i>Chemistry - A European Journal</i>",
+			"<i>Chemical Science</i>",
+			"<i>Nature Chemistry</i>",
+			"<i>Dalton Transactions</i>",
+			"<i>Journal of the American Chemical Society</i>",
+			"<i>Organometallics</i>",
+			"<i>Angewandte Chemie International Edition</i>",
+			"<i>Inorganic Chemistry</i>",
+			"<i>Chemical Communications</i>",
+			"<i>Journal of the American Chemical Society</i>,",
+			"\n        </row>",
+			"</row>",
+			",",
+			"",
+			"</row>",
+			"<row>",
+			"",
+			"text-muted text-center",
+			"squares col-md-4",
+			"14",
+			"17",
+			"20",
+			"23",
+			"26",
+			"\"30\"",
+			",\"size\":\"40\"},{",
+			", \"text\":\"",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 14756,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3233,
+								3241
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 582.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "suzanne.html",
+					"settings":
+					{
+						"buffer_size": 4400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "publicationlist.html",
+					"settings":
+					{
+						"buffer_size": 16409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div id=\"publistcontent\">",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Volumes/ag_fnr/Users/jdoucett/scripts/PrinterCommand.command",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 662.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pubs.html",
+					"settings":
+					{
+						"buffer_size": 3626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1810,
+								1825
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "bartlab.css",
+					"settings":
+					{
+						"buffer_size": 2344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								501
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

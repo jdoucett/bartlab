@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_256x256</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon_256x256" sketch:type="MSArtboardGroup">
+            <circle id="Blue-Circle" stroke="#004CDC" stroke-width="6" sketch:type="MSShapeGroup" cx="128.5" cy="128.5" r="99.5"></circle>
+            <g id="Projects" sketch:type="MSLayerGroup" transform="translate(46.000000, 46.000000)">
+                <g id="Guides__x26__Forms"></g>
+                <g id="Icons" transform="translate(20.625000, 10.312500)" fill="#004CDC" sketch:type="MSShapeGroup">
+                    <g id="Group">
+                        <path d="M103.00125,30.9375 L108.57,20.5940625 C114.107812,20.4342187 118.59375,15.8864063 118.59375,10.3125 C118.59375,4.640625 113.953125,0 108.28125,0 C102.609375,0 97.96875,4.640625 97.96875,10.3125 C97.96875,12.2770313 98.5565625,14.1023438 99.5207812,15.6698437 L91.2810937,30.9375 L0,30.9375 L0,41.25 L10.3125,41.25 L10.3125,128.90625 C10.3125,137.450156 17.2373438,144.375 25.78125,144.375 L97.96875,144.375 C106.512656,144.375 113.4375,137.450156 113.4375,128.90625 L113.4375,41.25 L123.75,41.25 L123.75,30.9375 L103.00125,30.9375 L103.00125,30.9375 Z M103.125,134.0625 L20.625,134.0625 L20.625,41.25 L103.125,41.25 L103.125,134.0625 L103.125,134.0625 Z" id="Shape"></path>
+                        <path d="M97.96875,82.5 L25.78125,82.5 L25.78125,128.90625 L97.96875,128.90625 L97.96875,82.5 L97.96875,82.5 Z M82.5,113.4375 L41.25,113.4375 L41.25,108.28125 L82.5,108.28125 L82.5,113.4375 L82.5,113.4375 Z M82.5,97.96875 L41.25,97.96875 L41.25,92.8125 L82.5,92.8125 L82.5,97.96875 L82.5,97.96875 Z" id="Shape"></path>
+                        <rect id="Rectangle-path" x="41.25" y="51.5625" width="41.25" height="5.15625"></rect>
+                        <rect id="Rectangle-path" x="41.25" y="67.03125" width="41.25" height="5.15625"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
